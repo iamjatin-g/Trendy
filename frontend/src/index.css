@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: Comfortaa;
+    user-select: none;
+}
+
+a.active hr{
+    display: block;
+}
+
+a.active p{
+    font-weight: bold;
+}
+
+@media (max-width: 640px) {
+    .side-menu a.active{
+        background-color: black;
+        color: white;
+    }
+}
