@@ -23,15 +23,15 @@ const About = () => {
       </div>
       <div className="flex flex-col md:flex-row text-justify mb-20">
         <div className="border px-10 md:px-10 py-8 sm:py-20 flex flex-col gap-5">
-          <b><i className="fa-solid fa-star mr-2 fa-xl"></i>Quality Assurance:</b>
+          <b><i style={{color: 'gold'}} className="fa-solid fa-star mr-2 fa-xl"></i>Quality Assurance:</b>
           <p className='text-gray-600' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam inventore dicta.</p>
         </div>
         <div className="border px-10 md:px-10 py-8 sm:py-20 flex flex-col gap-5">
-          <b><i className="fa-regular fa-handshake mr-2 fa-xl"></i>Convenience:</b>
+          <b><i style={{color: 'green'}} className="fa-regular fa-handshake mr-2 fa-xl"></i>Convenience:</b>
           <p className='text-gray-600' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam inventore dicta.</p>
         </div>
         <div className="border px-10 md:px-10 py-8 sm:py-20 flex flex-col gap-5">
-          <b><i className="fa-solid fa-headset mr-2 fa-xl"></i>Exceptional Customer Service:</b>
+          <b><i style={{color: 'orange'}} className="fa-solid fa-headset mr-2 fa-xl"></i>Exceptional Customer Service:</b>
           <p className='text-gray-600' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam inventore dicta.</p>
         </div>
       </div>

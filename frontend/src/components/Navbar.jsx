@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect , useState } from 'react'
 import {assets} from '../assets/assets'
 import { Link, NavLink } from 'react-router-dom'
+import { ShopContext } from '../context/ShopContext'
+
 
 const Navbar = () => {
-    const [visible, setVisible] = useState(false)
+  const [visible, setVisible] = useState(false);
+  const {setShowSearch, getCartCount} = useContext(ShopContext);
   return (
     <div className='flex items-center justify-between py-5 font-medium'>
       <NavLink to='/'>
@@ -28,9 +31,9 @@ const Navbar = () => {
         </NavLink>
       </ul>
       <div className="flex items-center gap-6">
-        <i className="fa-solid fa-magnifying-glass fa-lg cursor-pointer"></i>
+        <button onClick={()=>setShowSearch(true)} ><i className="fa-solid fa-magnifying-glass fa-lg cursor-pointer"></i></button> 
         <div className="group relative">
-            <i className="fa-solid fa-user fa-lg cursor-pointer"></i>
+          <Link to='/login'><i className="fa-solid fa-user fa-lg cursor-pointer"></i></Link>
             <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4">
                 <div className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded">
                 <p className="cursor-pointer hover:text-black">My Profile</p>
@@ -41,7 +44,7 @@ const Navbar = () => {
         </div>
         <Link to='/cart' className='relative'>
             <i className="fa-solid fa-cart-shopping fa-lg"></i>
-            <p className="absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[9px]">4</p>
+          <p className="absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[9px]">{getCartCount()}</p>
         </Link>
         <div className="cursor-pointer sm:hidden">
             <i onClick={()=>setVisible(true)} className="fa-solid fa-bars fa-lg"></i>

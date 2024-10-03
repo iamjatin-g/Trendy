@@ -32,6 +32,8 @@ import jeans2_1 from './baggy_jeans_men.png'
 import jeans3_1 from './regular_jeans_women.png'
 
 
+const desc = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis quidem ullam dolores officia aperiam. Consequatur qui esse iste culpa laborum cupiditate."
+
 export const assets = {
     logo,
     logo_bold,
@@ -48,9 +50,9 @@ export const products = [
     {
         _id: "01",
         name: "Men Regular Fit Hoodie",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo tenetur laudantium ab. Repellendus, modi expedita saepe magni tenetur dolorum.",
+        description: desc,
         price: "30",
-        image: [r_hoodie1_1],
+        image: [r_hoodie1_1, r_hoodie1_1, r_hoodie1_1, r_hoodie1_1],
         category: "Men",
         subcategory: "Topwear",
         sizes: ["S","M","L","XL"],
@@ -61,7 +63,7 @@ export const products = [
     {
         _id: "02",
         name: "Men Regular Fit T-shirt",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo tenetur laudantium ab. Repellendus, modi expedita saepe magni tenetur dolorum.",
+        description: desc,
         price: "20",
         image: [r_tshirt1_1],
         category: "Men",
@@ -74,7 +76,7 @@ export const products = [
     {
         _id: "03",
         name: "Women Regular Fit T-shirt",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo tenetur laudantium ab. Repellendus, modi expedita saepe magni tenetur dolorum.",
+        description: desc,
         price: "15",
         image: [r_tshirt2_1],
         category: "Women",
@@ -87,7 +89,7 @@ export const products = [
     {
         _id: "04",
         name: "Women Over-Sized T-shirt",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo tenetur laudantium ab. Repellendus, modi expedita saepe magni tenetur dolorum.",
+        description: desc,
         price: "20",
         image: [o_tshirt1_1, o_tshirt1_1, o_tshirt1_1, o_tshirt1_1],
         category: "Women",
@@ -100,7 +102,7 @@ export const products = [
     {
         _id: "05",
         name: "Men Over-Sized T-shirt",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo tenetur laudantium ab. Repellendus, modi expedita saepe magni tenetur dolorum.",
+        description: desc,
         price: "25",
         image: [o_tshirt2_1],
         category: "Men",
@@ -113,7 +115,7 @@ export const products = [
     {
         _id: "06",
         name: "Women Winter Jacket",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo tenetur laudantium ab. Repellendus, modi expedita saepe magni tenetur dolorum.",
+        description: desc,
         price: "50",
         image: [jacket1_1],
         category: "Women",
@@ -126,7 +128,7 @@ export const products = [
     {
         _id: "07",
         name: "Men Winter Jacket",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo tenetur laudantium ab. Repellendus, modi expedita saepe magni tenetur dolorum.",
+        description: desc,
         price: "50",
         image: [jacket2_1],
         category: "Men",
@@ -139,7 +141,7 @@ export const products = [
     {
         _id: "08",
         name: "Women Regular Fit Hoodie",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo tenetur laudantium ab. Repellendus, modi expedita saepe magni tenetur dolorum.",
+        description: desc,
         price: "50",
         image: [r_hoodie2_1],
         category: "Women",
@@ -152,7 +154,7 @@ export const products = [
     {
         _id: "09",
         name: "Women Over-Sized Hoodie",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo tenetur laudantium ab. Repellendus, modi expedita saepe magni tenetur dolorum.",
+        description: desc,
         price: "45",
         image: [o_hoodie1_1],
         category: "Women",
@@ -165,7 +167,7 @@ export const products = [
     {
         _id: "10",
         name: "Men Over-Sized Hoodie",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo tenetur laudantium ab. Repellendus, modi expedita saepe magni tenetur dolorum.",
+        description: desc,
         price: "45",
         image: [o_hoodie2_1],
         category: "Men",
@@ -178,7 +180,7 @@ export const products = [
     {
         _id: "11",
         name: "Men Shirt",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo tenetur laudantium ab. Repellendus, modi expedita saepe magni tenetur dolorum.",
+        description: desc,
         price: "40",
         image: [shirt1_1],
         category: "Men",
@@ -191,7 +193,7 @@ export const products = [
     {
         _id: "12",
         name: "Men Cargo Pants",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo tenetur laudantium ab. Repellendus, modi expedita saepe magni tenetur dolorum.",
+        description: desc,
         price: "25",
         image: [cargo1_1],
         category: "Men",
@@ -204,7 +206,7 @@ export const products = [
     {
         _id: "13",
         name: "Men Regular Fit Trouser",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo tenetur laudantium ab. Repellendus, modi expedita saepe magni tenetur dolorum.",
+        description: desc,
         price: "30",
         image: [trouser1_1],
         category: "Men",
@@ -217,7 +219,7 @@ export const products = [
     {
         _id: "14",
         name: "Men Track Pant",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo tenetur laudantium ab. Repellendus, modi expedita saepe magni tenetur dolorum.",
+        description: desc,
         price: "20",
         image: [track1_1],
         category: "Men",
@@ -230,7 +232,7 @@ export const products = [
     {
         _id: "15",
         name: "Men Regular Fit Jeans",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo tenetur laudantium ab. Repellendus, modi expedita saepe magni tenetur dolorum.",
+        description: desc,
         price: "15",
         image: [jeans1_1],
         category: "Men",
@@ -243,7 +245,7 @@ export const products = [
     {
         _id: "16",
         name: "Men Baggy Jeans",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo tenetur laudantium ab. Repellendus, modi expedita saepe magni tenetur dolorum.",
+        description: desc,
         price: "20",
         image: [jeans2_1],
         category: "Men",
@@ -256,7 +258,7 @@ export const products = [
     {
         _id: "17",
         name: "Women Regular Fit Trouser",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo tenetur laudantium ab. Repellendus, modi expedita saepe magni tenetur dolorum.",
+        description: desc,
         price: "15",
         image: [trouser2_1],
         category: "Women",
@@ -269,7 +271,7 @@ export const products = [
     {
         _id: "18",
         name: "Women Cargo Pants",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo tenetur laudantium ab. Repellendus, modi expedita saepe magni tenetur dolorum.",
+        description: desc,
         price: "20",
         image: [cargo2_1],
         category: "Women",
@@ -282,7 +284,7 @@ export const products = [
     {
         _id: "19",
         name: "Women Track Pant",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo tenetur laudantium ab. Repellendus, modi expedita saepe magni tenetur dolorum.",
+        description: desc,
         price: "20",
         image: [track2_1],
         category: "Women",
@@ -295,7 +297,7 @@ export const products = [
     {
         _id: "20",
         name: "Women Regular Fit Jeans",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quo tenetur laudantium ab. Repellendus, modi expedita saepe magni tenetur dolorum.",
+        description: desc,
         price: "25",
         image: [jeans3_1],
         category: "Women",

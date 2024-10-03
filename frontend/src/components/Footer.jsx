@@ -2,6 +2,22 @@ import React from 'react'
 import {assets} from '../assets/assets'
 
 const Footer = () => {
+    function instagramLink() {
+        window.open("https://instagram.com/iamjatin_g/");
+    }
+    function githubLink() {
+        window.open("https://github.com/iamjatin-g");
+    }
+    function twitterLink() {
+        window.open("https://x.com/iamjatin_g");
+    }
+    function threadsLink() {
+        window.open("https://threads.net/@iamjatin_g");
+    }
+    function pinterestLink() {
+        window.open("https://in.pinterest.com/");
+    }
+
     return (
         <div>
             <div className="flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-sm">
@@ -24,6 +40,14 @@ const Footer = () => {
                         <li>+91-98765-43210</li>
                         <li>trendy.shop@gmail.com</li>
                     </ul>
+                    <div className="flex my-3 cursor-pointer">
+                        <i onClick={instagramLink} style={{color: '#962fbf'}} className="fa-brands fa-instagram fa-2xl mr-5 my-5"></i>
+                        <i onClick={githubLink} className="fa-brands fa-github fa-2xl mr-5 my-5"></i>
+                        <i onClick={twitterLink} style={{color: 'skyblue'}} className="fa-brands fa-twitter fa-2xl mr-5 my-5"></i>
+                        <i onClick={threadsLink} className="fa-brands fa-threads fa-2xl mr-5 my-5"></i>
+                        <i onClick={pinterestLink} style={{color: 'red'}} className="fa-brands fa-pinterest fa-2xl mr-5 my-5"></i>
+
+                    </div>
                 </div>
                 
             </div>

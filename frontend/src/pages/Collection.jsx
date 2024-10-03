@@ -5,7 +5,7 @@ import ProductItem from '../components/ProductItem'
 
 const Collection = () => {
   
-  const { products } = useContext(ShopContext);
+  const { products, search, showSearch } = useContext(ShopContext);
   const [showFilter, setShowFilter] = useState(false);
   const [filterProducts, setFilterProducts] = useState([]);
   const [category, setCategory] = useState([]);
@@ -35,6 +35,11 @@ const Collection = () => {
 
   const applyFilter = () => {
     let filteredProducts = [...products];
+
+    if (showSearch && search) {
+      filteredProducts = filteredProducts.filter(item => item.name.toLowerCase().includes(search.toLowerCase()));
+    }
+
     if (category.length > 0) {
       filteredProducts = filteredProducts.filter(item => category.includes(item.category));
     }
@@ -65,7 +70,7 @@ const Collection = () => {
 
   useEffect(() => {
     applyFilter();
-  }, [category, subCategory])
+  }, [category, subCategory, search, showSearch]);
   
   useEffect(() => {
     sortProducts();
@@ -81,7 +86,7 @@ const Collection = () => {
         </p>
 
         {/* Category Filter */}
-        <div className={`border border-gray-300 pl-5 py-3 mt-6 ${showFilter ? '' : 'hidden'} sm:block`}>
+        <div className={`border rounded-md border-gray-300 pl-5 py-3 mt-6 ${showFilter ? '' : 'hidden'} sm:block`}>
           <p className="mb-3 text-sm font-bold">CATEGORIES</p>
           <div className="flex flex-col gap-2 text-sm font-medium text-gray-700">
             <p className="flex gap-2">
@@ -97,7 +102,7 @@ const Collection = () => {
         </div>
 
         {/* Category Filter */}
-        <div className={`border border-gray-300 pl-5 py-3 my-3 mb-6 ${showFilter ? '' : 'hidden'} sm:block`}>
+        <div className={`border rounded-md border-gray-300 pl-5 py-3 my-3 mb-6 ${showFilter ? '' : 'hidden'} sm:block`}>
           <p className="mb-3 text-sm font-bold">TYPE</p>
           <div className="flex flex-col gap-2 text-sm font-medium text-gray-700">
             <p className="flex gap-2">
@@ -119,7 +124,7 @@ const Collection = () => {
           <Title text1={'ALL'} text2={'COLLECTIONS'} />
 
           {/* Product Sort */}
-          <select onChange={(e)=>setSortType(e.target.value)} name="" id="" className="border-2 border-gray-300 text-sm px-2">
+          <select onChange={(e)=>setSortType(e.target.value)} name="" id="" className="border-2 rounded-md border-gray-300 text-sm px-2">
             <option value="relavent">Sort by: Relavent</option>
             <option value="low-high">Sort by: Low to High</option>
             <option value="high-low">Sort by: High to Low</option>
