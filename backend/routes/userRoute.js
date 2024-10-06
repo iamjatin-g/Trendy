@@ -7,7 +7,7 @@ userRouter.post('/register', registerUser);
 
 userRouter.post('/login', loginUser);
 
-userRouter.post('/admin/login', loginAdmin);
+userRouter.post('/admin', loginAdmin);
 
 export default userRouter;
 
